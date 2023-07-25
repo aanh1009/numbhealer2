@@ -1,0 +1,37 @@
+<header>
+  <video src="pexels-louai-munajim-5818973540p.mp4" autoplay loop muted></video>
+  <div class="header-container">
+    <div class="header-left">
+      <h1>NUMBHEALER</h1>
+      <p id="header-description">Here, whispers from the universe converge with the enigmatic language of numbers. Delve into the secrets they hold, unravelling hidden pathways to healing and career enlightenment. Surrender to the cosmic dance, where destiny's embrace awaits those who dare to listen. Embark on this enigmatic voyage, guided by the celestial forces that shape our existence. The universe beckons. Will you answer?</p>
+    </div>
+    <div class="calculator-container">
+      <div class="calculator" id="calculator">
+        <div class="input-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name"  name="name" required/>
+        </div>
+        <div class="input-group">
+          <label for="birthDate">Date of Birth:</label>
+          <input type="number" id="birthDate" placeholder="DD" name="birthDate" min="1" max="31" required/>
+          <input type="number" id="birthMonth" placeholder="MM"name="birthMonth" min="1" max="12" required />
+          <input type="number" id="birthYear" placeholder="YYYY" name="birthYear" required />
+        </div>
+        <button id="calculateButton">Calculate</button>
+      </div>
+      <div class="result" id="result">
+        <h3>Numerology Numbers</h3>
+        <div id="resultContainer">
+          <p><span>Soul's Urge Number:</span> <span id="resultSoulUrge"></span></p>
+          <p><span>Personality Number:</span> <span id="resultPersonality"></span></p>
+          <p><span>Name:</span> <span id="resultName"></span></p>
+          <p><span>Birth Date:</span> <span id="resultBirthDate"></span></p>
+          <p><span>Life Path Number:</span> <span id="resultLifePath"></span></p>
+          <p><span>Attitude Number:</span> <span id="resultAttitude"></span></p>
+        </div>
+        <a href="#your-chart" rel="decode_chart" onclick="openPage('your-chart',this)">Decode chart</a>      </div>
+    </div>
+  </div>
+
+</header>
+
