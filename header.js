@@ -79,8 +79,12 @@ function calculateNumerology() {
 
   document.getElementById("calculator").style.display = "none";
   document.getElementById("result").style.display = "block";
-
-  // Attach event listener to "Calculate Again" button
+  document.getElementById("soulurge").innerHTML = soulUrgeNumber
+  document.getElementById("personality").innerHTML = personalityNumber
+  document.getElementById('namenumber').innerHTML = calculateSingleDigit(soulUrgeNumber + personalityNumber);
+  document.getElementById('destiny').innerHTML = calculateSingleDigit(soulUrgeNumber + personalityNumber);
+  document.getElementById('birthdate').innerHTML = birthDateNumber;
+  
   document.getElementById("calculateAgainButton").addEventListener("click", calculateAgain);
 }
 
@@ -143,8 +147,7 @@ function openPage(pageName, elmnt) {
 // Add event listeners to the tab buttons and "Decode Your Chart" button
 document.getElementById("aboutTab").addEventListener("click", () => openPage("about", document.getElementById("aboutTab")));
 document.getElementById("yourChartTab").addEventListener("click", () => openPage("your-chart", document.getElementById("yourChartTab")));
-
-// Show the "about" tab content by default
+document.getElementById("manifestationTab").addEventListener("click", () => openPage("manifestation", document.getElementById("manifestationTab")));
 openPage("about", document.getElementById("aboutTab"));
 
 

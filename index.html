@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heal With Your Numbers</title>
   <link rel="stylesheet" href="style.css">
-  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+  <link rel="stylesheet" href="Site1/Page-2.css">
     <meta name="generator" content="Nicepage 5.12.7, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Abril+Fatface:400">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    
+    <script class="u-script" type="text/javascript" src="page.js" defer=""></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
     
     
     <script type="application/ld+json">{
@@ -22,30 +23,30 @@
 		"name": ""
 }</script>
 <meta name="theme-color" content="#478ac9">
-<meta property="og:title" content="Page 1">
 <meta property="og:type" content="website">
 <meta data-intl-tel-input-cdn-path="intlTelInput/">
   </head>
-
+<section class="space">
+</section>
 <body >
   
   <nav>
     <ul>
-      <li><button class="tablink active" id="aboutTab">About Us</button></li>
+      <li><button class="tablink active" id="aboutTab">About</button></li>
+      <li><button class="tablink" id="introduction">Introduction</button></li>
       <li><button class="tablink" id="yourChartTab">Your Chart</button></li>
       <li><button class="tablink" id="manifestationTab">Manifestation</button></li>
-      <li><button class="tablink" id="careerTab">Career</button></li>
       <li><button class="tablink" id="dailyTab">Daily Numerology</button></li>
     </ul>
   </nav>
-
+ 
   <header>
     <div id="headerContainer"></div>
   </header>
 
   <main>
     <div class="result" id="result">
-      <h3>Numerology Numbers</h3>
+      <h3 id="res">Numerology Numbers</h3>
       <div id="resultContainer">
         <p><span>Soul Urge Number:</span> <span id="resultSoulUrge"></span></p>
         <p><span>Personality Number:</span> <span id="resultPersonality"></span></p>
@@ -54,20 +55,21 @@
         <p><span>Life Path Number:</span> <span id="resultLifePath"></span></p>
         <p><span>Attitude Number:</span> <span id="resultAttitude"></span></p>
         <button id="calculateAgainButton">Calculate Again</button>
-        <button id="decodeChartButton">Decode Your Chart</button> <!-- Add this button here -->
+        <button id="decodeChartButton">Decode Your Chart</button> 
       </div>
     </div>
     
     <section id="about" class="tabcontent">
       <div class="content-item">
-        <h2>What is Numerology?</h2>
+        <h2 id="1">What is Numerology?</h2>
         <div class="content">
-          <p>Numerology is a belief in the mystical and divine significance of numbers. It is a system that assigns symbolic
-            meanings to numbers and their influence on human life. Through numerology, we can uncover hidden patterns, explore
-            personality traits, and gain insights into our life's purpose. Numerologists believe that numbers have vibrations
-            that can affect various aspects of our lives, including relationships, career choices, and personal development.
-            By understanding numerology, we can make better decisions, embrace our strengths, and navigate life's challenges
-            with a greater sense of purpose and direction.</p>
+          <p style="text-align: justify;">
+            <span class="u-custom-font u-font-raleway">I</span>
+            <span class="u-custom-font u-font-raleway">&nbsp;</span>
+            <span style="line-height: 2.0;">
+              <span class="u-custom-font u-font-raleway">believe that when you suffer from mental illnesses, it is only a matter of time before the effects evade your physicality. It has been observed that most unhealthy conditions do not stem from infections, but from the deterioration of internal well-being. What shown on the outside is the reflection of your inside. That is what makes the power of manifestation more important. Implement these declarations below into your life to prevent some certain illnesses that belong to specific numbers</span>
+            </span>
+          </p>
           <img src="child-dreams-flying-space-boy-child-fantasy-black-white-vector-graphics_506026-343.jpg" alt="Numerology Image">
         </div>
       </div>
@@ -99,6 +101,7 @@
     </section>
     <section id="your-chart" class="tabcontent">
         <section class="u-clearfix u-image u-section-1" id="sec-0901" data-image-width="1980" data-image-height="1714">
+          <div> hello </div>
           <div class="u-clearfix u-sheet u-sheet-1">
             <div class="u-grey-10 u-shape u-shape-rectangle u-shape-1" data-animation-name="flipIn" data-animation-duration="1500" data-animation-direction="X" data-animation-delay="500"></div>
             <div class="u-align-left u-container-style u-grey-5 u-group u-group-1" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="500" data-animation-direction="">
@@ -113,8 +116,8 @@
                 <h3 class="u-text u-text-3">meaning<br>
                 </h3>
                 <p class="u-custom-font u-font-raleway u-text u-text-4">SOUL'S URGE NUMBER describes your innermost endeavors. You may have never been aware of those, but you should now, because these will be the key to you life-long fulfillment.</p>
-                <h3 class="u-text u-text-5">your number :&nbsp;<br>
-                </h3>
+                <h3 class="u-text u-text-3">your number<p id="soulurge"></p><br></h3>
+                <p class="u-custom-font u-font-raleway u-text u-text-4"></p>
               </div>
             </div>
             <div class="u-palette-5-dark-2 u-shape u-shape-circle u-shape-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
@@ -145,7 +148,8 @@
                 </div>
                 <div class="u-align-right u-carousel-item u-container-style u-slide">
                   <div class="u-container-layout u-container-layout-3">
-                    <h2 class="u-text u-text-5">your number</h2>
+                    <h2 class="u-text u-text-5">your number
+                    <p id="personality"></p></h2>
                   </div>
                 </div>
               </div>
@@ -179,8 +183,808 @@
         </section>
         
         </div>
+      </div> <section class="u-clearfix u-image u-section-3" id="carousel_3e74" data-image-width="850" data-image-height="1593">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+          <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+            <div class="u-gutter-0 u-layout">
+              <div class="u-layout-col">
+                <div class="u-size-20">
+                  <div class="u-layout-row">
+                    <div class="u-container-style u-hidden-sm u-hidden-xs u-layout-cell u-size-23 u-layout-cell-1">
+                      <div class="u-container-layout u-container-layout-1"></div>
+                    </div>
+                    <div class="u-container-style u-layout-cell u-size-14 u-layout-cell-2">
+                      <div class="u-container-layout u-container-layout-2">
+                        <div class="u-image u-image-circle u-image-1" data-image-width="980" data-image-height="980"></div>
+                      </div>
+                    </div>
+                    <div class="u-container-style u-grey-5 u-layout-cell u-radius-50 u-shape-round u-size-23 u-layout-cell-3">
+                      <div class="u-container-layout u-valign-bottom u-container-layout-3">
+                        <h6 class="u-custom-font u-font-oswald u-text u-text-default u-text-1">NAME NUMBER</h6>
+                        <p class="u-custom-font u-font-raleway u-text u-text-default u-text-grey-40 u-text-2">The name number is believed to reveal important insights into a person's inherent talents, abilities, and potential life path. It provides a deeper understanding of one's personality. Click to discover&nbsp;&nbsp; <span class="u-file-icon u-icon"><img src="2989995.png" alt=""></span> &nbsp;</p>
+                        <!-- Add the 'data-modal-toggle' attribute with a unique id for each read more link -->
+                        <a href="#" class="u-align-right u-black u-border-2 u-border-grey-75 u-btn u-btn-round u-button-style u-hover-custom-color-5 u-radius-20 u-btn-1" data-modal-toggle="modal-name-number">read more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-size-20">
+                  <div class="u-layout-row">
+                    <div class="u-container-style u-grey-5 u-layout-cell u-radius-50 u-shape-round u-size-23 u-layout-cell-4">
+                      <div class="u-container-layout u-valign-top u-container-layout-4">
+                        <h6 class="u-custom-font u-font-oswald u-text u-text-default u-text-3">ANOTHER NAME OF "NAME"</h6>
+                        <p class="u-align-right u-custom-font u-font-raleway u-text u-text-default u-text-grey-50 u-text-4">The Name Number has another name - The Destiny Number. As the name has already spoken itself, this second layer of the Name Number reveals your utmost missions in this life. Click to discover&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="2989995.png" alt=""></span> &nbsp;</p>
+                        <!-- Add the 'data-modal-toggle' attribute with a unique id for each read more link -->
+                        <a href="#" class="u-align-right u-black u-border-2 u-border-grey-75 u-btn u-btn-round u-button-style u-hover-palette-3-light-1 u-radius-20 u-btn-2" data-modal-toggle="modal-another-name">read more</a>
+                      </div>
+                    </div>
+                    <div class="u-container-style u-layout-cell u-size-14 u-layout-cell-5">
+                      <div class="u-container-layout u-container-layout-5">
+                        <div class="u-image u-image-circle u-image-2" data-image-width="980" data-image-height="980"></div>
+                      </div>
+                    </div>
+                    <div class="u-container-style u-hidden-sm u-hidden-xs u-layout-cell u-size-23 u-layout-cell-6">
+                      <div class="u-container-layout u-container-layout-6"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-size-20">
+                  <div class="u-layout-row">
+                    <div class="u-container-style u-hidden-sm u-hidden-xs u-layout-cell u-size-23 u-layout-cell-7">
+                      <div class="u-container-layout u-container-layout-7"></div>
+                    </div>
+                    <div class="u-container-style u-layout-cell u-size-14 u-layout-cell-8">
+                      <div class="u-container-layout u-container-layout-8">
+                        <div class="u-image u-image-circle u-image-3" data-image-width="1000" data-image-height="1000"></div>
+                      </div>
+                    </div>
+                    <div class="u-container-style u-grey-5 u-layout-cell u-radius-50 u-shape-round u-size-23 u-layout-cell-9">
+                      <div class="u-container-layout u-container-layout-9">
+                        <h6 class="u-custom-font u-font-oswald u-text u-text-default u-text-5">BIRTH DATE NUMBER</h6>
+                        <p class="u-align-left u-custom-font u-font-raleway u-text u-text-default u-text-grey-50 u-text-6">The Birth Date Number refers to the date during a month on which a person was born. This number encompasses insights into a person's personality, strengths, and challenges. Click to discover&nbsp;&nbsp; <span class="u-file-icon u-icon"><img src="2989995.png" alt=""></span> </p>
+                        <!-- Add the 'data-modal-toggle' attribute with a unique id for each read more link -->
+                        <a href="#" class="u-align-right u-black u-border-2 u-border-grey-75 u-btn u-btn-round u-button-style u-hover-custom-color-3 u-radius-20 u-btn-3" data-modal-toggle="modal-birth-date">read more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Modal Popups -->
+      <div class="modal" id="modal-name-number">
+        <div class="modal-content">
+          <span class="modal-close" data-modal-toggle="modal-name-number">&times;</span>
+          <h2 class="u-custom-font u-font-oswald u-text-default" id="namenumber"></h2>
+        </div>
+      </div>
+      
+      <div class="modal" id="modal-another-name">
+        <div class="modal-content">
+          <span class="modal-close" data-modal-toggle="modal-another-name">&times;</span>
+          <h2 class="u-custom-font u-font-oswald u-text-default" id="destiny">Destiny Number</h2>
+        </div>
+      </div>
+      
+      <div class="modal" id="modal-birth-date">
+        <div class="modal-content">
+          <span class="modal-close" data-modal-toggle="modal-birth-date">&times;</span>
+          <h2 class="u-custom-font u-font-oswald u-text-default" id="birthdate"></h2>
+        </div>
+      </div>
+      
+    <section class="u-align-center-lg u-align-center-md u-align-center-xl u-align-left-sm u-align-left-xs u-clearfix u-image u-shading u-section-4" id="sec-2706" data-image-width="1280" data-image-height="1448">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-1"> life path NUMBER</h2>
+        <div class="u-clearfix u-gutter-20 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-align-center u-container-style u-layout-cell u-radius-50 u-shape-round u-size-20 u-white u-layout-cell-1">
+                    <div class="u-container-layout u-valign-middle u-container-layout-1">
+                      <h4 class="u-align-center u-custom-font u-text u-text-default u-text-2">MEANING&nbsp;</h4>
+                      <p class="u-align-center u-custom-font u-font-raleway u-text u-text-default u-text-3">Sample text. Click to select the Text Element.</p>
+                      <a href="https://nicepage.dev" class="u-align-center u-black u-border-hover-palette-3-base u-border-none u-btn u-button-style u-hover-white u-btn-1">read more</a>
+                    </div>
+                  </div>
+                  <div class="u-container-align-center u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                    <div class="u-container-layout u-valign-middle u-container-layout-2">
+                      <img class="u-image u-image-round u-radius-50 u-image-1" data-image-width="287" data-image-height="215" src="images/i.jpeg">
+                    </div>
+                  </div>
+                  <div class="u-container-align-center u-container-style u-layout-cell u-size-20 u-layout-cell-3">
+                    <div class="u-container-layout u-container-layout-3">
+                      <img class="u-image u-image-round u-radius-50 u-image-2" data-image-width="1280" data-image-height="1707" src="data:image/jpeg;base64,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">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-align-center u-container-style u-layout-cell u-size-20 u-layout-cell-4">
+                    <div class="u-container-layout u-valign-middle u-container-layout-4">
+                      <img class="u-image u-image-round u-radius-50 u-image-3" data-image-width="1280" data-image-height="1707" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKMSgngKp3vn7LA8vpoc8OqatfTmgjBpnzd412YUy8&s">
+                    </div>
+                  </div>
+                  <div class="u-container-align-center u-container-style u-layout-cell u-size-20 u-layout-cell-5">
+                    <div class="u-container-layout u-container-layout-5">
+                      <img class="u-image u-image-round u-radius-50 u-image-4" data-image-width="1280" data-image-height="1280" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShryfLtdsY8a9135TlEedNiBeUdYMwbdd6deTTIlLHuQ&s">
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-radius-50 u-shape-round u-size-20 u-white u-layout-cell-6">
+                    <div class="u-container-layout u-container-layout-6">
+                      <h4 class="u-align-center u-custom-font u-text u-text-default u-text-4">MEANING&nbsp;</h4>
+                      <p class="u-align-center u-custom-font u-font-raleway u-text u-text-default u-text-5">Sample text. Click to select the Text Element.</p>
+                      <a href="https://nicepage.dev" class="u-align-center u-black u-border-hover-palette-3-base u-border-none u-btn u-button-style u-hover-white u-btn-2">read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <a href="#manifestation" rel="manifestation" class="mani_text" onclick="openPage('manifestation',this)">Embark on your healing journey</a>
+
+    </section>
+    <section id="manifestation" class="tabcontent">
+      <meta name="theme-color" content="#478ac9">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+   
+      <body class="u-body u-xl-mode" data-lang="en">
+    <section class="u-align-center u-black u-clearfix u-section-1a" id="sec-46a5">
+      <div class="u-container-style u-expanded-width u-group u-white u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <p class="u-align-justify u-custom-font u-font-raleway u-text u-text-1">In Numerology, each number is associated with both the positive and the the negative ones.<br>On this page, I want to show you the powerful manifesto that you could use to combat the negative attachments of each number in your pack, as I did when surmounting my sense of self-insuffiency, characterized by a 9 in Life Path
+          </p>
+          <h1 class="u-align-left u-custom-font u-font-raleway u-text u-text-2">MANIF<span style="font-weight: 700;"></span>ESTATION&nbsp;&nbsp;<br>THE ART OF HEALING 
+          </h1>
+          <div class="u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
+            <div class="u-gallery-inner u-gallery-inner-1">
+              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item" data-href="Page-2.html#carousel_c7a5">
+                <div class="u-back-slide" data-image-width="1000" data-image-height="1500">
+                  <img class="u-back-image u-expanded u-back-image-1" src="https://images.unsplash.com/photo-1624696503378-069979d46b71?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D&amp;w=1000&amp;q=80" alt="CHAPTER 1">
+                </div>
+                <div class="u-container-align-left u-over-slide u-shading u-valign-bottom u-over-slide-1">
+                  <h3 class="u-align-left u-custom-font u-font-montserrat u-gallery-heading" style="margin-left: 0px; margin-right: auto; font-size: 1.5rem; font-weight: 700;">CHAPTER 1</h3>
+                  <p class="u-align-left u-gallery-text" style="margin-left: 0px; margin-right: auto;">Introduction and Instruction<br>
+                  </p>
+                </div>
+              </div>
+              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item" data-href="Page-2.html#carousel_6cc0">
+                <div class="u-back-slide" data-image-width="1000" data-image-height="1500">
+                  <img class="u-back-image u-expanded u-back-image-2" src="https://images.unsplash.com/photo-1599493782407-2fe53235d2c8?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGJvb2t8ZW58MHx8MHx8fDA%3D&amp;w=1000&amp;q=80" alt="CHAPTER 2">
+                </div>
+                <div class="u-container-align-left u-over-slide u-shading u-valign-bottom u-over-slide-2">
+                  <h3 class="u-align-left u-custom-font u-font-montserrat u-gallery-heading" style="margin-left: 0px; margin-right: auto; font-size: 1.5rem; font-weight: 700;">CHAPTER 2</h3>
+                  <p class="u-align-left u-gallery-text" style="margin-left: 0px; margin-right: auto;">Mental Healing</p>
+                </div>
+              </div>
+              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item u-gallery-item-3" data-href="Page-2.html#sec-0d13">
+                <div class="u-back-slide" data-image-width="720" data-image-height="1280">
+                  <img class="u-back-image u-expanded u-back-image-3" src="https://wallpaperaccess.com/full/3120926.jpg" alt="CHAPTER 3">
+                </div>
+                <div class="u-container-align-left u-over-slide u-shading u-valign-bottom u-over-slide-3">
+                  <h3 class="u-align-left u-custom-font u-font-montserrat u-gallery-heading" style="margin-left: 0px; margin-right: auto; font-size: 1.5rem; font-weight: 700;">CHAPTER 3</h3>
+                  <p class="u-align-left u-gallery-text" style="margin-left: 0px; margin-right: auto;">Physical Healing<br>
+                  </p>
+                </div>
+              </div>
+              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item" data-href="Page-2.html#carousel_d672">
+                <div class="u-back-slide" data-image-width="899" data-image-height="900">
+                  <img class="u-back-image u-expanded u-back-image-4" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/white-daisy-flowers-black-background-edward-fielding.jpg" alt="CHAPTER 4">
+                </div>
+                <div class="u-container-align-left u-over-slide u-shading u-valign-bottom u-over-slide-4">
+                  <h3 class="u-align-left u-custom-font u-font-montserrat u-gallery-heading" style="margin-left: 0px; margin-right: auto; font-size: 1.5rem; font-weight: 700;">CHAPTER 4</h3>
+                  <p class="u-align-left u-gallery-text" style="margin-left: 0px; margin-right: auto;">Regular Illnesses and Manifesto<br>
+                  </p>
+                </div>
+              </div>
+              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item u-gallery-item-5" data-href="Page-2.html#carousel_8199">
+                <div class="u-back-slide" data-image-width="928" data-image-height="1228">
+                  <img class="u-back-image u-expanded u-back-image-5" src="https://s.studiobinder.com/wp-content/uploads/2021/01/Black-and-white-pictures-of-flowers-Mark-McKnight.jpg.webp?resolution=2294,0.75" alt="CHAPTER 5">
+                </div>
+                <div class="u-container-align-left u-over-slide u-shading u-valign-bottom u-over-slide-5">
+                  <h3 class="u-align-left u-custom-font u-font-montserrat u-gallery-heading" style="margin-left: 0px; margin-right: auto; font-size: 1.5rem; font-weight: 700;">CHAPTER 5</h3>
+                  <p class="u-align-left u-gallery-text" style="margin-left: 0px; margin-right: auto;">My Own Story</p>
+                </div>
+              </div>
+              <div class="u-effect-fade u-effect-hover-zoom u-gallery-item u-gallery-item-6" data-href="Page-2.html#sec-a8e0">
+                <div class="u-back-slide" data-image-width="850" data-image-height="1511">
+                  <img class="u-back-image u-expanded u-back-image-6" src="https://e1.pxfuel.com/desktop-wallpaper/330/396/desktop-wallpaper-iphone-trippy-dark-aesthetic-black-and-white-space-aesthetic.jpg" alt="CHAPTER 6">
+                </div>
+                <div class="u-container-align-left u-over-slide u-shading u-valign-bottom u-over-slide-6">
+                  <h3 class="u-align-left u-custom-font u-font-montserrat u-gallery-heading" style="margin-left: 0px; margin-right: auto; font-size: 1.5rem; font-weight: 700;">CHAPTER 6</h3>
+                  <p class="u-align-left u-gallery-text" style="margin-left: 0px; margin-right: auto;">Inspiration &amp; Acknowledgment</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-white u-section-2a" id="carousel_c7a5">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-right-cell u-size-31-lg u-size-31-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <div class="u-shape u-shape-svg u-text-palette-5-dark-2 u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6487"></use></svg>
+                    <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-6487" style="enable-background:new 0 0 160 160;"><path d="M80,30c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S52.4,30,80,30 M80,0C35.8,0,0,35.8,0,80s35.8,80,80,80
+	s80-35.8,80-80S124.2,0,80,0L80,0z"></path></svg>
+                  </div>
+                  <div class="u-image u-image-circle u-image-1" data-image-width="1060" data-image-height="1590" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"></div>
+                  <div class="u-palette-5-base u-preserve-proportions u-shape u-shape-circle u-shape-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-left-cell u-radius-32 u-shape-round u-size-29-lg u-size-29-xl u-size-60-md u-size-60-sm u-size-60-xs u-white u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0">
+                <div class="u-container-layout u-container-layout-2">
+                  <h2 class="u-align-center u-text u-text-1">introduction</h2>
+                  <p class="u-align-center u-custom-font u-font-raleway u-text u-text-2">As it is labeled as a "science", Numerology is potent of leveraging the positive energies of your life</p>
+                  <div class="u-align-center u-border-3 u-border-palette-5-base u-line u-line-horizontal u-line-1"></div>
+                  <h5 class="u-align-justify u-custom-font u-font-montserrat u-text u-text-3">
+                    <span style="font-weight: 700;">Manifestations&nbsp;&nbsp;<span style="font-weight: 400;"> are declarations that reset your autonomy, establish boundaries and reshape your enery.</span>
+                      <span style="font-weight: 400;"> &nbsp;</span>
+                    </span>
+                  </h5>
+                  <h5 class="u-align-justify u-custom-font u-font-montserrat u-text u-text-4"> #<span style="font-weight: 700;">Funfact:&nbsp;<span style="font-weight: 400;"> When you are used to a negative mindset or habit, it normally occurs to your mind 400 times a day on average</span>
+                      <span style="font-weight: 400;">.</span>
+                      <span style="font-weight: 400;"> &nbsp;</span>
+                    </span>
+                  </h5>
+                  <h5 class="u-align-justify u-custom-font u-font-montserrat u-text u-text-5">
+                    <span style="font-weight: 700;">Good news:&nbsp;<span style="font-weight: 400;"> With the practice of <span style="font-weight: 700;">manifestation&nbsp;<span style="font-weight: 400;"> from <span style="font-weight: 700;">15-20</span> minutes a day, your identity can be reoriented, away from the pessimistic paths, flowing good energy into life
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-3a" id="sec-f45b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1"></div>
+        </div>
+        <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-radius-32 u-right-cell u-size-31 u-white u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                <div class="u-container-layout u-container-layout-1">
+                  <h2 class="u-align-center u-text u-text-1">INSTRUCTIONS</h2>
+                  <p class="u-align-center u-custom-font u-font-raleway u-text u-text-2">Sound amazing, does it not? And here is how you can control your own emotions using numbers</p>
+                  <div class="u-align-center u-border-3 u-border-palette-5-base u-line u-line-horizontal u-line-1"></div>
+                  <h5 class="u-align-justify u-custom-font u-font-montserrat u-text u-text-3">
+                    <span style="font-weight: 700;">Manifestations&nbsp; &nbsp;<span style="font-weight: 400;"> can come in many forms, you may want to exert your determination by <span style="font-weight: 700;">reading</span> them out loud, <span style="font-weight: 700;">repeating</span> them <span style="font-weight: 700;">consistently</span> when you face your reflection in the mirror, or whisper to yourself any moments. Anything that you feel comfortable expressing yourself, and anything that you are&nbsp; ready to persevere till the end
+                      </span>
+                      <span style="font-weight: 400;">&nbsp;</span>
+                    </span>
+                  </h5>
+                  <h5 class="u-align-justify u-custom-font u-font-montserrat u-text u-text-4"><b>15-20 minutes<span style="font-weight: 400;"> everyday of self-reflection and self-declaration should be enough to construct a healthy mental state. You may see noticable changes within the first few months, but I would advice you to maintain this habit as long as possible</span></b>
+                  </h5>
+                  <a href="Page-2.html#carousel_6cc0" class="u-align-center u-border-2 u-border-active-palette-2-dark-1 u-border-black u-border-hover-palette-5-dark-1 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-style u-custom-font u-font-montserrat u-none u-text-black u-text-hover-palette-5-dark-1 u-btn-1">START NOW</a>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-left-cell u-shape-round u-size-29 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0">
+                <div class="u-container-layout u-container-layout-2">
+                  <div class="u-shape u-shape-svg u-text-palette-5-dark-2 u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7839"></use></svg>
+                    <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-7839" style="enable-background:new 0 0 160 160;"><path d="M80,30c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S52.4,30,80,30 M80,0C35.8,0,0,35.8,0,80s35.8,80,80,80
+	s80-35.8,80-80S124.2,0,80,0L80,0z"></path></svg>
+                  </div>
+                  <div class="u-image u-image-circle u-image-1" data-image-width="800" data-image-height="1422" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"></div>
+                  <div class="u-palette-5-base u-preserve-proportions u-shape u-shape-circle u-shape-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-video u-section-4a" id="carousel_6cc0">
+      
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-layout-cell u-radius-32 u-right-cell u-size-60 u-white u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                <div class="u-container-layout u-container-layout-1">
+                  <h2 class="u-align-center u-text u-text-1">mental healing</h2>
+                  <div class="u-align-center u-border-3 u-border-grey-50 u-line u-line-horizontal u-line-1"></div>
+                  <p class="u-align-justify u-custom-font u-font-raleway u-text u-text-2">As mentioned on the "Your Chart" page, Life Path Number is the most important among the six numbers of a human being; its influence is present on both your outer and inner; therefore, the manifestation focuses mainly on resolving the negative energy of your Life Path Number.</p>
+                  <h4 class="u-align-justify u-custom-font u-font-oswald u-text u-text-3">
+                    <span style="font-weight: 700;"> YOUR&nbsp;</span>
+                    <span style="font-weight: 700;"></span>
+                    <span style="font-weight: 700;"></span><b>LIFE PATH NUMBER:&nbsp;&nbsp;</b>
+                  </h4>
+                  <div class="u-flip-horizontal u-shape u-shape-svg u-text-black u-shape-1">
+                    <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 130" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0398"></use></svg>
+                    <svg class="u-svg-content" viewBox="0 0 160 130" x="0px" y="0px" id="svg-0398" style="enable-background:new 0 0 160 130;"><path d="M148.3,0H11.7C5.3,0,0,5.2,0,11.5v79.8c0,6.4,5.3,11.5,11.7,11.5h56L67.6,130l24.2-27.2h56.5c6.5,0,11.7-5.2,11.7-11.5V11.5
+	C160,5.2,154.7,0,148.3,0z"></path></svg>
+                  </div>
+                  <h4 class="u-align-justify u-custom-font u-font-oswald u-text u-text-4">
+                    <span style="font-weight: 700;"> USUAL PROBLEMS</span><b>:&nbsp;&nbsp;</b>
+                  </h4>
+                  <blockquote class="u-align-justify u-border-none u-custom-font u-font-raleway u-hover-feature u-text u-text-body-alt-color u-text-5">"I am so great. I made efforts so hard and I feel sufficient of my own qualities."&nbsp;</blockquote>
+                  <h4 class="u-align-justify u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-6">
+                    <span style="font-weight: 700;">YOUR ​MANIFESTO</span><b>&nbsp;</b>
+                  </h4>
+                  <ul class="u-align-justify u-custom-font u-font-raleway u-text u-text-7">
+                    <li>People with number 1 are too strict with themselves, and sometimes even with others.</li>
+                    <li>They put a pressure on their shoulders to make constant progress, thus having no time to enjoy life.</li>
+                    <li>1s have a strong desire to be the front runner so they may easily take offence at any advice, feeling that others are either trying to dethrone them or envious of their achievements.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="u-align-justify u-text u-text-8">1<br>
+        </h2>
+      </div>
+      
+    </section>
+    <section class="u-clearfix u-section-5" id="sec-0d13">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1">
+          <h1>
+            <span class="u-custom-font u-font-oswald" style="font-weight: 700;">PHYSICAL HEALING&nbsp;</span>
+          </h1>
+          <p style="text-align: justify;">
+            <span class="u-custom-font u-font-raleway">I</span>
+            <span class="u-custom-font u-font-raleway">&nbsp;</span>
+            <span style="line-height: 2.0;">
+              <span class="u-custom-font u-font-raleway">believe that when you suffer from mental illnesses, it is only a matter of time before the effects evade your physicality. It has been observed that most unhealthy conditions do not stem from infections, but from the deterioration of internal well-being. What shown on the outside is the reflection of your inside. That is what makes the power of manifestation more important. Implement these declarations below into your life to prevent some certain illnesses that belong to specific numbers</span>
+            </span>
+          </p>
+          <p>
+            <br>
+          </p>
+          <p>
+            <img src="Site1/images/Clement-Numbers.jpeg.webp" align="center" style="width: 366px;" class="fr-dib fr-fic" width="570">&nbsp;
+          </p>
+          <p>
+            <br>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-6" id="carousel_d672">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h3 class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-palette-5-dark-2 u-text-1">01</h3>
+                  <h3 class="u-custom-font u-font-oswald u-text u-text-default u-text-palette-5-dark-2 u-text-2">YOUR LIFE PATH NUMBER (again) </h3>
+                  <h2 class="u-align-left u-text u-text-default u-text-3"> reg​ular illnesses &amp; manifesto </h2>
+                </div>
+              </div>
+              <div class="u-container-align-center u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="1000" data-image-height="1500">
+                <div class="u-container-layout u-container-layout-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="carousel-fa1d" data-interval="5000" data-u-ride="false" class="u-carousel u-slider u-slider-1">
+          <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
+            <li data-u-target="#carousel-fa1d" class="u-active u-grey-30 u-shape-circle" data-u-slide-to="0" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-fa1d" class="u-grey-30 u-shape-circle" data-u-slide-to="1" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-fa1d" class="u-grey-30 u-shape-circle" data-u-slide-to="2" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-fa1d" class="u-grey-30 u-shape-circle" data-u-slide-to="3" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-fa1d" class="u-grey-30 u-shape-circle" data-u-slide-to="4" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-fa1d" class="u-grey-30 u-shape-circle" data-u-slide-to="5" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-fa1d" class="u-grey-30 u-shape-circle" data-u-slide-to="6" style="width: 10px; height: 10px;"></li>
+          </ol>
+          <div class="u-carousel-inner" role="listbox">
+            <div class="u-active u-align-left u-carousel-item u-container-style u-slide">
+              <div class="u-container-layout u-valign-top u-container-layout-3">
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-4">1. ALCOHOL ADDICTION</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-5">Reason:&nbsp;<span style="font-weight: 400;"> Wanting to escape from reality, feeling desperate</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I am linked to the reality. I need this world and it needs me​"</span>
+                  </span>
+                </p>
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-6" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">2. ARTHRITIS</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-7">Reason:&nbsp;<span style="font-weight: 400;"> Nitpicking others unnecessarily</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I feel fine with myself and this life is beautiful, where I free myself from all negativity​"</span>
+                  </span>
+                </p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-align-left u-carousel-item u-container-style u-slide">
+              <div class="u-container-layout u-valign-top u-container-layout-4">
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-8">1. ALCOHOL ADDICTION</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-9">Reason:&nbsp;<span style="font-weight: 400;"> Wanting to escape from reality, feeling desperate</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I am linked to the reality. I need this world and it needs me​"</span>
+                  </span>
+                </p>
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-10" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">2. ARTHRITIS</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-11">Reason:&nbsp;<span style="font-weight: 400;"> Nitpicking others unnecessarily</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I feel fine with myself and this life is beautiful, where I free myself from all negativity​"</span>
+                  </span>
+                </p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-align-left u-carousel-item u-container-style u-slide">
+              <div class="u-container-layout u-valign-top u-container-layout-5">
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-12">1. ALCOHOL ADDICTION</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-13">Reason:&nbsp;<span style="font-weight: 400;"> Wanting to escape from reality, feeling desperate</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I am linked to the reality. I need this world and it needs me​"</span>
+                  </span>
+                </p>
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-14" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">2. ARTHRITIS</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-15">Reason:&nbsp;<span style="font-weight: 400;"> Nitpicking others unnecessarily</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I feel fine with myself and this life is beautiful, where I free myself from all negativity​"</span>
+                  </span>
+                </p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-align-left u-carousel-item u-container-style u-slide">
+              <div class="u-container-layout u-valign-top u-container-layout-6">
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-16">1. ALCOHOL ADDICTION</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-17">Reason:&nbsp;<span style="font-weight: 400;"> Wanting to escape from reality, feeling desperate</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I am linked to the reality. I need this world and it needs me​"</span>
+                  </span>
+                </p>
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-18" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">2. ARTHRITIS</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-19">Reason:&nbsp;<span style="font-weight: 400;"> Nitpicking others unnecessarily</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I feel fine with myself and this life is beautiful, where I free myself from all negativity​"</span>
+                  </span>
+                </p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-align-left u-carousel-item u-container-style u-slide">
+              <div class="u-container-layout u-valign-top u-container-layout-7">
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-20">1. ALCOHOL ADDICTION</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-21">Reason:&nbsp;<span style="font-weight: 400;"> Wanting to escape from reality, feeling desperate</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I am linked to the reality. I need this world and it needs me​"</span>
+                  </span>
+                </p>
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-22" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">2. ARTHRITIS</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-23">Reason:&nbsp;<span style="font-weight: 400;"> Nitpicking others unnecessarily</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I feel fine with myself and this life is beautiful, where I free myself from all negativity​"</span>
+                  </span>
+                </p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-align-left u-carousel-item u-container-style u-slide">
+              <div class="u-container-layout u-valign-top u-container-layout-8">
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-24">1. ALCOHOL ADDICTION</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-25">Reason:&nbsp;<span style="font-weight: 400;"> Wanting to escape from reality, feeling desperate</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I am linked to the reality. I need this world and it needs me​"</span>
+                  </span>
+                </p>
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-26" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">2. ARTHRITIS</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-27">Reason:&nbsp;<span style="font-weight: 400;"> Nitpicking others unnecessarily</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I feel fine with myself and this life is beautiful, where I free myself from all negativity​"</span>
+                  </span>
+                </p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-align-left u-carousel-item u-container-style u-slide">
+              <div class="u-container-layout u-valign-top u-container-layout-9">
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-28">1. ALCOHOL ADDICTION</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-29">Reason:&nbsp;<span style="font-weight: 400;"> Wanting to escape from reality, feeling desperate</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I am linked to the reality. I need this world and it needs me​"</span>
+                  </span>
+                </p>
+                <h5 class="u-custom-font u-font-oswald u-hover-feature u-text u-text-30" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">2. ARTHRITIS</h5>
+                <p class="u-align-left u-custom-font u-font-raleway u-text u-text-31">Reason:&nbsp;<span style="font-weight: 400;"> Nitpicking others unnecessarily</span>
+                  <br>
+                  <br>
+                  <span style="font-weight: 700;">Manifesto: <span style="font-style: italic;">"I feel fine with myself and this life is beautiful, where I free myself from all negativity​"</span>
+                  </span>
+                </p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+          </div>
+          <a class="u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-spacing-10 u-carousel-control-1" href="#carousel-fa1d" role="button" data-u-slide="prev">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+          </a>
+          <a class="u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-spacing-10 u-carousel-control-2" href="#carousel-fa1d" role="button" data-u-slide="next">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      
+    </section>
+    <section class="u-carousel u-carousel-left u-slide u-valign-middle u-block-51e6-1" id="carousel_8199" data-interval="6000" data-u-ride="false">
+      <ol class="u-absolute-hcenter u-carousel-indicators u-block-51e6-2">
+        <li data-u-target="#carousel_8199" class="u-active u-grey-30" data-u-slide-to="0"></li>
+        <li data-u-target="#carousel_8199" class="u-grey-30" data-u-slide-to="1"></li>
+        <li data-u-target="#carousel_8199" class="u-grey-30" data-u-slide-to="2"></li>
+      </ol>
+      <div class="u-carousel-inner" role="listbox">
+        <div class="u-active u-align-left u-carousel-item u-clearfix u-image u-section-7-1" data-image-width="800" data-image-height="1422">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+              <div class="u-layout">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-image u-layout-cell u-left-cell u-size-20 u-image-1" data-image-width="2048" data-image-height="1365">
+                    <div class="u-container-layout u-container-layout-1"></div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-right-cell u-size-40 u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-2">
+                      <h2 class="u-text u-text-body-alt-color u-text-1">MY OWN STORY</h2>
+                      <h5 class="u-text u-text-body-alt-color u-text-default u-text-2">MY BACKGROUND</h5>
+                      <p class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-3">My name is Anh, I am a Vietnammese living in Ho Chi Minh City. Since 2021, I have been going to a prestigious gifted school, majoring in Mathematics.&nbsp;&nbsp;<br>
+                        <br>It was 4 years ago when my life started to diverge.&nbsp; My parents made a fuss over each other with the smallest details. Ever since, I have incurred an obtrusive sense of unworthiness and self-insuffiency. I embarked on eating everything I could, no matter hungry or not, for the naive belief that the food would fill the vacancy in my heart, not my stomach.&nbsp;
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-align-left u-carousel-item u-clearfix u-image u-section-7-2" data-image-width="800" data-image-height="1422">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+              <div class="u-layout">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-image u-layout-cell u-left-cell u-size-20 u-image-1" data-image-width="983" data-image-height="983">
+                    <div class="u-container-layout u-container-layout-1"></div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-right-cell u-size-40 u-layout-cell-2">
+                    <div class="u-container-layout u-valign-middle u-container-layout-2">
+                      <h2 class="u-text u-text-body-alt-color u-text-1">MY OWN STORY</h2>
+                      <h5 class="u-text u-text-body-alt-color u-text-default u-text-2">THE TURNING POINT</h5>
+                      <p class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-default u-text-3">At the end of the first semester in 11th grade, my situation got worse as the blood test indicated a cautious level of cholesterol. I was determined to control my weight<br>
+                        <br>That was when I came across a Numerology book at my sister's house. Initially, I did not dare to take a leap of faith, as I have been spending my life coining such things "pseudoscience". But as the book itself was&nbsp; pageturner,&nbsp; I kept progressing until I hit the section "Heal with your numbers".
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-align-left u-carousel-item u-clearfix u-image u-section-7-3" data-image-width="800" data-image-height="1422">
+          <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+              <div class="u-layout">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-image u-layout-cell u-left-cell u-shading u-size-20 u-image-1" data-image-width="1001" data-image-height="1200">
+                    <div class="u-container-layout u-container-layout-1"></div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-right-cell u-size-40 u-layout-cell-2">
+                    <div class="u-container-layout u-valign-middle u-container-layout-2">
+                      <h2 class="u-text u-text-body-alt-color u-text-1">MY OWN STORY</h2>
+                      <h5 class="u-text u-text-body-alt-color u-text-default u-text-2">the ending - the renewal</h5>
+                      <p class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-default u-text-3">After discovering my susceptibility to eating disorder as my Life Path Number was 9, I embarked on employing the practice of Manifestation. "I am worthy of love and I am sufficient on my own". That was what repeated every morning when I woke up for 5 months, until I officially lost 4 kilograms.<br>
+                        <br>Inspired by the book and exhilarated by my own journey, I commenced a new journey. Although it was hard at times as I was a completely newcomer to coding, I never gave up. And today, I can proudly introduce myself as the founder of this website -"The Numbhealer".
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="u-carousel-control u-carousel-control-prev u-text-grey-30 u-text-hover-white u-block-51e6-3" href="#carousel_8199" role="button" data-u-slide="prev">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 129 129"><path d="m64.5,122.6c32,0 58.1-26 58.1-58.1s-26-58-58.1-58-58,26-58,58 26,58.1 58,58.1zm0-108c27.5,5.32907e-15 49.9,22.4 49.9,49.9s-22.4,49.9-49.9,49.9-49.9-22.4-49.9-49.9 22.4-49.9 49.9-49.9z"></path><path d="m70,93.5c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2 1.6-1.6 1.6-4.2 0-5.8l-23.5-23.5 23.5-23.5c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-26.4,26.4c-0.8,0.8-1.2,1.8-1.2,2.9s0.4,2.1 1.2,2.9l26.4,26.4z"></path></svg>
+        </span>
+        <span class="sr-only">
+          <svg viewBox="0 0 129 129"><path d="m64.5,122.6c32,0 58.1-26 58.1-58.1s-26-58-58.1-58-58,26-58,58 26,58.1 58,58.1zm0-108c27.5,5.32907e-15 49.9,22.4 49.9,49.9s-22.4,49.9-49.9,49.9-49.9-22.4-49.9-49.9 22.4-49.9 49.9-49.9z"></path><path d="m70,93.5c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2 1.6-1.6 1.6-4.2 0-5.8l-23.5-23.5 23.5-23.5c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-26.4,26.4c-0.8,0.8-1.2,1.8-1.2,2.9s0.4,2.1 1.2,2.9l26.4,26.4z"></path></svg>
+        </span>
+      </a>
+      <a class="u-carousel-control u-carousel-control-next u-text-grey-30 u-text-hover-white u-block-51e6-4" href="#carousel_8199" role="button" data-u-slide="next">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 129 129"><path d="M64.5,122.6c32,0,58.1-26,58.1-58.1S96.5,6.4,64.5,6.4S6.4,32.5,6.4,64.5S32.5,122.6,64.5,122.6z M64.5,14.6    c27.5,0,49.9,22.4,49.9,49.9S92,114.4,64.5,114.4S14.6,92,14.6,64.5S37,14.6,64.5,14.6z"></path><path d="m51.1,93.5c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l26.4-26.4c0.8-0.8 1.2-1.8 1.2-2.9 0-1.1-0.4-2.1-1.2-2.9l-26.4-26.4c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l23.5,23.5-23.5,23.5c-1.6,1.6-1.6,4.2 0,5.8z"></path></svg>
+        </span>
+        <span class="sr-only">
+          <svg viewBox="0 0 129 129"><path d="M64.5,122.6c32,0,58.1-26,58.1-58.1S96.5,6.4,64.5,6.4S6.4,32.5,6.4,64.5S32.5,122.6,64.5,122.6z M64.5,14.6    c27.5,0,49.9,22.4,49.9,49.9S92,114.4,64.5,114.4S14.6,92,14.6,64.5S37,14.6,64.5,14.6z"></path><path d="m51.1,93.5c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l26.4-26.4c0.8-0.8 1.2-1.8 1.2-2.9 0-1.1-0.4-2.1-1.2-2.9l-26.4-26.4c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l23.5,23.5-23.5,23.5c-1.6,1.6-1.6,4.2 0,5.8z"></path></svg>
+        </span>
+      </a>
+    </section>
+    <section class="u-clearfix u-section-8" id="sec-a8e0">
+      <div class="u-container-style u-group u-shape-rectangle u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          
+        </div>
+      </div>
+      <h2 class="u-align-center u-text u-text-1">INSpiraTIONS</h2>
+      <p class="u-align-center u-custom-font u-font-raleway u-text u-text-2">My motivation for constructing and deploying this web, despite being used to completely computer-illiterate</p>
+      <div class="u-align-center u-border-3 u-border-palette-5-base u-line u-line-horizontal u-line-1"></div>
+      <h5 class="u-align-justify u-custom-font u-font-montserrat u-text u-text-black u-text-3"><b>Mrs. Glynis McCants&nbsp;<span style="font-weight: 400;"> is a renowned author in the field of numerology, crafting a multitude of well-researched publications on how to master your own life your numbers.</span></b>
+        <br>
+        <span style="font-weight: 700;">9 months ago</span>, when I was at the lowest of my life, grappling with eating disorder and social anxiety, I stumbled upon her most well-known book:&nbsp;<a href="https://www.glynishasyournumber.com/" class="u-active-none u-border-active-palette-5-dark-2 u-border-hover-palette-5-dark-1 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-link u-button-style u-hover-feature u-hover-none u-none u-text-hover-palette-5-base u-btn-1" target="_blank">"Glynis Has Your Number: Discover What Life Has in Store for You Through the Power of Numerology!"</a>
+        <span style="font-weight: 700;"><i>&nbsp; <span style="font-weight: 400;">
+              <span style="font-style: normal;"> This is also the book mentioned above.&nbsp;</span>
+            </span></i>
+          <span style="font-weight: 400;">Most of the content written in this section, and also this page, was extracted from the book as customed for personalization.</span>
+        </span>
+      </h5>
+      
+    </section>
+    <section class="u-black u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-section-9" id="carousel_05e4">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-default u-text-1">acknowledgement</h2>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1">
+                <h5 class="u-align-center u-custom-font u-font-oswald u-text u-text-default u-text-2">MYSELF</h5>
+                <p class="u-align-justify u-custom-font u-font-raleway u-text u-text-3">I went through the toughest days of my life. And for myself to be able to stand here in pride, I would have to be grateful for myself, for never giving up, and for the endless intellectual curiosity I was born with</p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                <h5 class="u-align-center u-custom-font u-font-oswald u-text u-text-default u-text-4">EVERYONE</h5>
+                <p class="u-align-justify u-custom-font u-font-raleway u-text u-text-5">I could never articulate how grateful I am to my parents and my sister for having never abandoned me. And I would also want to thank anyone who came across my life and drovve me through the hardest parts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="Page-2.html#carousel_05e4" class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-border-2 u-btn u-button-style u-custom-font u-font-montserrat u-hover-feature u-hover-grey-80 u-text-hover-white u-white u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">back to your chart</a>
+        <a href="Page-2.html#carousel_05e4" class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-border-2 u-btn u-button-style u-custom-font u-font-montserrat u-hover-feature u-hover-palette-5-dark-2 u-none u-text-hover-white u-btn-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">see today's numerology</a>
+      </div>
+      
+      
+    </section>
+    
+    
+    <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer u-grey-80" id="sec-9b27"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1">
+          <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
+          <a class="u-social-url" title="facebook" target="_blank" href=""><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ef01"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ef01"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+      c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="twitter" target="_blank" href=""><span class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5fbc"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-5fbc"><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
+      c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
+      c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
+      c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
+      c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="instagram" target="_blank" href=""><span class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-2b21"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-2b21"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+      z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+      C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+      c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="linkedin" target="_blank" href=""><span class="u-icon u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-abc3"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-abc3"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+      C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
+      H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg></span>
+          </a>
+        </div>
+        <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-1">Sample text. Click to select the Text Element.</p>
+      </div></footer>
+</body>
+    </section>
+    <script>
+      // Function to toggle the modal
+      function toggleModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.classList.toggle('active');
+      }
+    
+      // Attach event listeners to all 'read more' links with 'data-modal-toggle' attribute
+      const modalToggleLinks = document.querySelectorAll('[data-modal-toggle]');
+      modalToggleLinks.forEach(link => {
+        const modalId = link.getAttribute('data-modal-toggle');
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          toggleModal(modalId);
+        });
+      });
+    
+      // Attach event listener to close button inside the modal
+      const modalCloseButtons = document.querySelectorAll('.modal .modal-close');
+      modalCloseButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const modal = button.closest('.modal');
+          modal.classList.remove('active');
+        });
+      });
+    
+      // Close modal when clicking outside the content area
+      window.addEventListener('click', (event) => {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+          if (event.target === modal) {
+            modal.classList.remove('active');
+          }
+        });
+      });
+    </script>
+    
+
     <script src="header.js"></script>
     
   </main>
