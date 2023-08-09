@@ -148,6 +148,7 @@ function openPage(pageName, elmnt) {
 document.getElementById("aboutTab").addEventListener("click", () => openPage("about", document.getElementById("aboutTab")));
 document.getElementById("yourChartTab").addEventListener("click", () => openPage("your-chart", document.getElementById("yourChartTab")));
 document.getElementById("manifestationTab").addEventListener("click", () => openPage("manifestation", document.getElementById("manifestationTab")));
+document.getElementById("dailyTab").addEventListener("click", () => openPage("daily", document.getElementById("dailyTab")));
 openPage("about", document.getElementById("aboutTab"));
 
 
