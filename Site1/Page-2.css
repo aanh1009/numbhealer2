@@ -2206,7 +2206,7 @@
   transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
 }.u-block-51e6-2 {
   position: absolute;
-  bottom: 10px;
+  bottom: -10px;
 }
 
 .u-block-51e6-3 {
