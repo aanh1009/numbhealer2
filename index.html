@@ -13,7 +13,7 @@
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Abril+Fatface:400">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="page.js" defer=""></script>
-
+    <script class="u-script" type="text/javascript" src="header.js" defer=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
     
@@ -37,6 +37,7 @@
       <li><button class="tablink" id="yourChartTab">Your Chart</button></li>
       <li><button class="tablink" id="manifestationTab">Manifestation</button></li>
       <li><button class="tablink" id="dailyTab">Daily Numerology</button></li>
+      <li><button class="tablink" id="historyTab">History</button></li>
     </ul>
   </nav>
  
@@ -142,7 +143,7 @@
       <div class="u-align-left u-container-style u-custom-item u-grey-90 u-list-item u-repeater-item u-shape-rectangle u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1250">
         <div class="u-container-layout u-similar-container u-container-layout-3">
           <h3 class="u-custom-font u-custom-item u-font-oswald u-text u-text-body-alt-color u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">Daily Numerology</h3>
-          <p class="u-custom-item u-text u-text-6" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-direction="Left" data-animation-delay="500">See what advice I have for you to make today a day to remember</p><span class="u-custom-item u-file-icon u-icon u-text-white u-icon-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-href="#"><img src="545682-75e83562.png" alt=""></span>
+          <p class="u-custom-item u-text u-text-6" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-direction="Left" data-animation-delay="500">See what advice I have for you to make today a day to remember</p><span class="u-custom-item u-file-icon u-icon u-text-white u-icon-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" data-href="#daily" onclick="openPage('daily',this)"><img src="545682-75e83562.png" alt=""></span>
         </div>
       </div>
     </div>
@@ -185,7 +186,7 @@
           <div class="u-container-style u-layout-cell u-radius-50 u-shape-round u-size-27 u-white u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="0">
             <div class="u-container-layout u-container-layout-2">
               <h6 class="u-align-center u-text u-text-default u-text-palette-5-dark-2 u-text-2">AFTERWORDS</h6>
-              <p class="u-align-justify u-custom-font u-font-raleway u-text u-text-body-color u-text-3">I am new to both Numerology and web development, so of course this website leaves spacious room for improvement. Still, after all, I wish I have somehow assisted your in shaping you life. If you have any stories, please feel free to let me know</p>
+              <p class="u-align-justify u-custom-font u-font-raleway u-text u-text-body-color u-text-3">I am new to both Numerology and web development, so of course this website leaves spacious room for improvement. Still, after all, I wish I have somehow assisted you in shaping you life. If you have any stories, please feel free to let me know</p>
               <p class="u-align-justify u-custom-font u-font-raleway u-text u-text-body-color u-text-4">If you are curious to know about me and the reason for this website, please check the Manifestation part.</p>
             </div>
           </div>
@@ -197,7 +198,6 @@
     </section>
     <section id="your-chart" class="tabcontent">
         <section class="u-clearfix u-image u-section-1" id="sec-0901" data-image-width="1980" data-image-height="1714">
-          <div> hello </div>
           <div class="u-clearfix u-sheet u-sheet-1">
             <div class="u-grey-10 u-shape u-shape-rectangle u-shape-1" data-animation-name="flipIn" data-animation-duration="1500" data-animation-direction="X" data-animation-delay="500"></div>
             <div class="u-align-left u-container-style u-grey-5 u-group u-group-1" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="500" data-animation-direction="">
@@ -212,15 +212,17 @@
                 <h3 class="u-text u-text-3">meaning<br>
                 </h3>
                 <p class="u-custom-font u-font-raleway u-text u-text-4">SOUL'S URGE NUMBER describes your innermost endeavors. You may have never been aware of those, but you should now, because these will be the key to you life-long fulfillment.</p>
-                <h3 class="u-text u-text-3">your number<p id="soulurge"></p><br></h3>
-                <p class="u-custom-font u-font-raleway u-text u-text-4"></p>
+                <h3 class="u-text u-text-3">your number</h3>
+                <p id="soulurge"></p>
+                <p class="u-custom-font u-font-raleway u-text u-text-4" id="sucontent">
+                </p>
               </div>
             </div>
             <div class="u-palette-5-dark-2 u-shape u-shape-circle u-shape-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
           </div>
           
         </section>
-        <section class="u-clearfix u-image u-shading u-section-2" id="sec-076e" data-image-width="1123" data-image-height="866">
+        <section class="u-clearfix u-image u-shading u-section-2" id="sec-076e" data-image-width="1123" data-image-height="906">
           <div class="u-clearfix u-sheet u-sheet-1">
             <div id="carousel-5989" data-interval="5000" data-u-ride="carousel" class="u-carousel u-slider u-slider-1">
               <ol class="u-carousel-indicators u-carousel-indicators-1">
@@ -245,7 +247,9 @@
                 <div class="u-align-right u-carousel-item u-container-style u-slide">
                   <div class="u-container-layout u-container-layout-3">
                     <h2 class="u-text u-text-5">your number
-                    <p id="personality"></p></h2>
+                    <p id="personality"></p>
+                  </h2>
+                  <p id="pcontent"></p>
                   </div>
                 </div>
               </div>
@@ -298,7 +302,6 @@
                       <div class="u-container-layout u-valign-bottom u-container-layout-3">
                         <h6 class="u-custom-font u-font-oswald u-text u-text-default u-text-1">NAME NUMBER</h6>
                         <p class="u-custom-font u-font-raleway u-text u-text-default u-text-grey-40 u-text-2">The name number is believed to reveal important insights into a person's inherent talents, abilities, and potential life path. It provides a deeper understanding of one's personality. Click to discover&nbsp;&nbsp; <span class="u-file-icon u-icon"><img src="2989995.png" alt=""></span> &nbsp;</p>
-                        <!-- Add the 'data-modal-toggle' attribute with a unique id for each read more link -->
                         <a href="#" class="u-align-right u-black u-border-2 u-border-grey-75 u-btn u-btn-round u-button-style u-hover-custom-color-5 u-radius-20 u-btn-1" data-modal-toggle="modal-name-number">read more</a>
                       </div>
                     </div>
@@ -350,28 +353,62 @@
         </div>
       </section>
       
-      <!-- Modal Popups -->
       <div class="modal" id="modal-name-number">
+        <style>
+          .modal-content{
+            display:flex;
+          }
+          p[id='namecontent']{
+            font-size :15px;
+          }
+        </style>
         <div class="modal-content">
           <span class="modal-close" data-modal-toggle="modal-name-number">&times;</span>
           <h2 class="u-custom-font u-font-oswald u-text-default" id="namenumber"></h2>
+          <p id="namecontent">
+          </p>
         </div>
       </div>
       
       <div class="modal" id="modal-another-name">
+        <style>
+          .modal-content{
+            display:flex;
+          }
+          p[id='destinycontent']{
+            font-size :15px;
+          }
+        </style>
         <div class="modal-content">
           <span class="modal-close" data-modal-toggle="modal-another-name">&times;</span>
           <h2 class="u-custom-font u-font-oswald u-text-default" id="destiny">Destiny Number</h2>
+          <p id="destinycontent">
+          </p>
         </div>
       </div>
       
       <div class="modal" id="modal-birth-date">
+        <style>
+          .modal-content{
+            display:flex;
+          }
+          p[id='birthdatecontent']{
+            font-size :15px;
+          }
+        </style>
         <div class="modal-content">
           <span class="modal-close" data-modal-toggle="modal-birth-date">&times;</span>
           <h2 class="u-custom-font u-font-oswald u-text-default" id="birthdate"></h2>
+          <p id="birthdatecontent">
+          </p>
         </div>
       </div>
-      
+      <div class="modal" id="modal-life-path">
+        <div class="modal-content">
+          <span class="modal-close" data-modal-toggle="modal-life-path">&times;</span>
+          <h2 class="u-custom-font u-font-oswald u-text-default" id="lifepath"></h2>
+        </div>
+      </div>
     <section class="u-align-center-lg u-align-center-md u-align-center-xl u-align-left-sm u-align-left-xs u-clearfix u-image u-shading u-section-4" id="sec-2706" data-image-width="1280" data-image-height="1448">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-align-center u-text u-text-1"> life path NUMBER</h2>
@@ -384,7 +421,7 @@
                     <div class="u-container-layout u-valign-middle u-container-layout-1">
                       <h4 class="u-align-center u-custom-font u-text u-text-default u-text-2">MEANING&nbsp;</h4>
                       <p class="u-align-center u-custom-font u-font-raleway u-text u-text-default u-text-3">Sample text. Click to select the Text Element.</p>
-                      <a href="https://nicepage.dev" class="u-align-center u-black u-border-hover-palette-3-base u-border-none u-btn u-button-style u-hover-white u-btn-1">read more</a>
+                      <a href="#" class="u-align-right u-black u-border-2 u-border-grey-75 u-btn u-btn-round u-button-style u-hover-palette-3-light-1 u-radius-20 u-btn-2" data-modal-toggle="modal-life-path">read more</a>
                     </div>
                   </div>
                   <div class="u-container-align-center u-container-style u-layout-cell u-size-20 u-layout-cell-2">
@@ -612,9 +649,8 @@
 	C160,5.2,154.7,0,148.3,0z"></path></svg>
                   </div>
                   <h4 class="u-align-justify u-custom-font u-font-oswald u-text u-text-4">
-                    <span style="font-weight: 700;"> USUAL PROBLEMS</span><b>:&nbsp;&nbsp;</b>
                   </h4>
-                  <blockquote class="u-align-justify u-border-none u-custom-font u-font-raleway u-hover-feature u-text u-text-body-alt-color u-text-5">"I am so great. I made efforts so hard and I feel sufficient of my own qualities."&nbsp;</blockquote>
+                  <blockquote class="u-align-justify u-border-none u-custom-font u-font-raleway u-hover-feature u-text u-text-body-alt-color u-text-5" id="manifesto">&nbsp;</blockquote>
                   <h4 class="u-align-justify u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-6">
                     <span style="font-weight: 700;">YOUR ​MANIFESTO</span><b>&nbsp;</b>
                   </h4>
@@ -628,7 +664,7 @@
             </div>
           </div>
         </div>
-        <h2 class="u-align-justify u-text u-text-8">1<br>
+        <h2 class="u-align-justify u-text u-text-8" id="soulurge2"><br>
         </h2>
       </div>
       
@@ -665,7 +701,7 @@
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
-                  <h3 class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-palette-5-dark-2 u-text-1">01</h3>
+                  <h3 class="u-align-left u-custom-font u-font-montserrat u-text u-text-default u-text-palette-5-dark-2 u-text-1" id="illnumber"></h3>
                   <h3 class="u-custom-font u-font-oswald u-text u-text-default u-text-palette-5-dark-2 u-text-2">YOUR LIFE PATH NUMBER (again) </h3>
                   <h2 class="u-align-left u-text u-text-default u-text-3"> reg​ular illnesses &amp; manifesto </h2>
                 </div>
@@ -1044,7 +1080,175 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
     </section>
    </section>
     <section id="daily" class="tabcontent">
+      <style>
+        /* Styles for the container (initial size) */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 60px;
+            margin-top: 60px;
+        }
 
+        .calendar {
+            width: 48%; 
+        }
+
+        .calendar table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: black;
+            color: white;
+        }
+
+        .calendar table th,
+        .calendar table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease; }
+        .content {
+            width: 48%; /* Adjust as needed */
+            display: none; /* Initially hidden */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            transition: all 0.6s ease;
+        }
+
+        .content p {
+            padding: 10px;
+        }
+        h1[id='dn']{
+          text-align:center;
+          font-family: fantasy;
+          font-size :50px;
+        }
+        .highlighted-day {
+          background-color:white;
+          color:black;
+        }
+    </style>
+   <div>
+    <h1 id="dn">Daily Numerology</h1>
+   </div> 
+  <div class="container" id="container">
+    <div class="calendar" id="calendar"></div>
+    <div class="content" id="event-content">
+      <p id="selectedDate">April 1st</p>
+    </div>
+</div>
+<script>
+
+  const container = document.getElementById('container');
+  const eventContent = document.getElementById('event-content');
+ 
+  // Define content for each day of the month
+ const dayContent = {
+    1: 'Numerology Tip: On the first day of the month, take a moment to set positive intentions for the days ahead.',
+    2: 'Numerology Tip: On the second day of the month, focus on balance and harmony in your life.',
+    3: 'Numerology Tip: On the third day of the month, express your creativity and communicate openly.',
+    4: 'Numerology Tip: On the fourth day of the month, prioritize stability and organization in your life.',
+    5: 'Numerology Tip: On the fifth day of the month, embrace change and adventure.',
+    6: 'Numerology Tip: On the sixth day of the month, focus on nurturing your relationships and showing love.',
+    7: 'Numerology Tip: On the seventh day of the month, seek spiritual insights and self-reflection.',
+    8: 'Numerology Tip: On the eighth day of the month, work on achieving your goals and ambitions.',
+    9: 'Numerology Tip: On the ninth day of the month, release the past and let go of what no longer serves you.',
+    10: 'Numerology Tip: On the tenth day of the month, find harmony between your inner and outer worlds.',
+    11: 'Numerology Tip: On the eleventh day of the month, embrace inspiration and intuition.',
+    12: 'Numerology Tip: On the twelfth day of the month, focus on self-improvement and personal growth.',
+    13: 'Numerology Tip: On the thirteenth day of the month, let go of fears and embrace transformation.',
+    14: 'Numerology Tip: On the fourteenth day of the month, express your emotions and feelings.',
+    15: 'Numerology Tip: On the fifteenth day of the month, find balance between work and relaxation.',
+    16: 'Numerology Tip: On the sixteenth day of the month, seek new opportunities and experiences.',
+    17: 'Numerology Tip: On the seventeenth day of the month, focus on building foundations for the future.',
+    18: 'Numerology Tip: On the eighteenth day of the month, create harmony in your environment.',
+    19: 'Numerology Tip: On the nineteenth day of the month, align with your life purpose and goals.',
+    20: 'Numerology Tip: On the twentieth day of the month, focus on partnerships and cooperation.',
+    21: 'Numerology Tip: On the twenty-first day of the month, manifest your desires and dreams.',
+    22: 'Numerology Tip: On the twenty-second day of the month, work on materializing your goals.',
+    23: 'Numerology Tip: On the twenty-third day of the month, embrace change and transformation.',
+    24: 'Numerology Tip: On the twenty-fourth day of the month, find stability and security.',
+    25: 'Numerology Tip: On the twenty-fifth day of the month, express your creativity and imagination.',
+    26: 'Numerology Tip: On the twenty-sixth day of the month, nurture your family and home life.',
+    27: 'Numerology Tip: On the twenty-seventh day of the month, seek spiritual wisdom and enlightenment.',
+    28: 'Numerology Tip: On the twenty-eighth day of the month, focus on self-discipline and responsibility.',
+    29: 'Numerology Tip: On the twenty-ninth day of the month, embrace your uniqueness and individuality.',
+    30: 'Numerology Tip: On the thirtieth day of the month, reflect on your achievements and set new goals for the future.',
+    31: 'Numerology Tip: On the thirty-first day of the month, celebrate the end of the month and prepare for a fresh start.',
+};
+
+
+  // Function to display numerology advice for a specific day with animations
+  function displayAdvice(day) {
+            // Remove highlight from all calendar cells
+            const allCalendarCells = document.querySelectorAll('.calendar td');
+            allCalendarCells.forEach(cell => cell.classList.remove('highlighted-day'));
+
+            // Highlight the clicked cell with a transition
+            const clickedCell = document.querySelector(`.calendar td[data-day="${day}"]`);
+            clickedCell.classList.add('highlighted-day');
+            const currentDate = new Date();
+            const currentYear = currentDate.getFullYear();
+            const currentMonth = currentDate.toLocaleString('default', { month: 'long' });
+            var selectedDate = `${currentMonth} ${day}, ${currentYear}`;
+
+
+            if (dayContent[day]) {
+                eventContent.innerHTML = selectedDate + '<br>'+ dayContent[day];
+            } else {
+                eventContent.innerHTML = 'No specific advice for this day.';
+            }
+
+            eventContent.style.opacity = '0'; // Initially set opacity to 0
+            eventContent.style.transform = 'translateX(-10px)'; // Slide in from left
+            eventContent.style.display = 'block';
+
+            // Use setTimeout to ensure transitions work correctly
+            setTimeout(() => {
+                eventContent.style.opacity = '1';
+                eventContent.style.transform = 'translateX(0)';
+            }, 10);
+        }
+
+  function generateCalendar(month) {
+      // Create the calendar table
+      let calendarHTML = '<table>';
+
+      const currentDate = new Date();
+      const currentDay = currentDate.getDate();
+
+      calendarHTML += '<tr>';
+      for (let day = 1; day <= 31; day++) {
+          const cellClass = day === currentDay ? 'highlighted-day' : '';
+          calendarHTML += `<td class="${cellClass}" data-day="${day}" onclick="displayAdvice(${day})">${day}</td>`;
+          if (day % 7 === 0) {
+              calendarHTML += '</tr><tr>';
+          }
+      }
+
+      calendarHTML += '</tr>';
+      calendarHTML += '</table>';
+      document.getElementById('calendar').innerHTML = calendarHTML;
+
+      displayAdvice(currentDay);
+  }
+
+  // Display the numerology calendar for a specific month (e.g., April) with the current date selected by default
+  generateCalendar('April');
+</script>
+    </section>
+    <section id="history" class="tabcontent">
+      <div class="result1">
+        <ul id="charts"></ul>
+      </div>
     </section>
     <script>
       // Function to toggle the modal

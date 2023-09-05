@@ -276,7 +276,8 @@
 }
 
 .u-section-2 .u-container-layout-3 {
-  padding: 30px 50px;
+  padding: 20px 60px;
+  padding-bottom: 0px;
 }
 
 .u-section-2 .u-text-5 {
@@ -17624,6 +17625,7 @@ background-color: transparent;
   .u-section-3 .u-container-layout-3 {
     padding-left: 10px;
     padding-right: 10px;
+  
   }
 
   .u-section-3 .u-layout-cell-4 {
@@ -33743,3 +33745,7 @@ p[id="header-description"] {
   margin: 0;
   font-family:raleway;
   }
+p[id="soulurge"]{
+  font-size :40px;
+  font-weight :900;
+}
